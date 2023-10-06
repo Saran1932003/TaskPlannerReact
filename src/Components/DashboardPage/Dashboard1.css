@@ -1,0 +1,24 @@
+
+
+.page{
+  background: url('../../assets/images/login/blackbg.webp') no-repeat;
+  background-size: cover;
+  height: 100vh;
+ } 
+
+ .pages{
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+ }
+.gif{
+  padding-top: 50%;
+} 
+
+
+.gif img{
+  border-radius: 10px;
+}
+/* .topbar{
+  margin-bottom: 0;
+} */

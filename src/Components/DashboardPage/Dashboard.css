@@ -1,0 +1,396 @@
+App.css
+
+/* Reset default margins and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color for the body */
+    box-sizing: border-box;
+  }
+  
+  /* Style the main container */
+  .main {
+    /* width: 90%; /* Adjust the width as needed */
+    /* margin: 5% auto;
+    border-radius: 10px;
+    padding: 3%;  */
+    /* background: linear-gradient(45deg, rgb(26, 1, 117) 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%, 
+                linear-gradient(135deg, rgb(225, 5, 152) 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, 
+                linear-gradient(225deg, hsla(179, 81%, 45%, 1) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%,
+                rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(189, 5, 245) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%; */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    color: white;
+    background: url('../../assets/images/login/blackbg.webp') no-repeat;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+  }
+  
+  /* Style the navigation bar */
+  .navbar {
+    /* padding: 5px; */
+    background-color: #dbd7d758;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; /* Increase spacing below the navbar */
+    border-radius: 5px; /* Rounded corners for the navbar */
+    box-shadow: 0px 4px 6px rgba(222, 107, 218, 0.1); /* Add a subtle shadow for separation */
+  }
+  
+  /* Style the search input and button */
+  .search {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push search to the right */
+  }
+  
+  .search input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 16px; /* Increase font size */
+  }
+  
+  .search button {
+    padding: 8px 16px;
+    background-color: #1877F2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+  }
+  
+  /* Style the login and sign-up buttons */
+  .auth {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add margin between search and auth */
+  }
+  
+  .auth button {
+    padding: 8px 16px;
+    background-color: #1877F2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+  }
+  
+  /* Add hover effect to buttons */
+  button:hover {
+    background-color: #13568b;
+  }
+  
+  /* Style the header */
+  .header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: #db58e498; */
+    /* color: #d45fd2; */
+  }
+  
+  /* Style the input form */
+  .inputForm {
+    padding: 8px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-size: 18px; /* Increase font size */
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the Save Task button */
+  .btnSave {
+    padding: 8px 16px;
+    background-color: #1877F2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+  }
+  
+  /* Style the card */
+  .Card {
+    background-color: rgb(17, 17, 17);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px; /* Increase spacing between cards */
+    color: rgb(1, 6, 1);
+  }
+  
+  @media only screen and (max-width: 450px) {
+    /* For small screens: */
+    .main {
+      width: 95%; /* Adjust the width for small screens */
+    }
+  
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px; /* Increase spacing below the navbar */
+      border-radius: 5px; /* Rounded corners for the navbar */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for separation */
+      /* padding: 5px; */
+    }
+    
+    /* Add the title "My Task Manager" to the left of the navbar */
+    .navbar-title {
+      font-size: 24px; /* Adjust the font size */
+      margin-left: 20px; /* Add some left margin for spacing */
+      /* padding: 5px; */
+    }
+  
+    .search {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .search input[type="text"],
+    .search button,
+    .auth button {
+      width: 100%; /* Full width for small screens */
+      margin-right: 0;
+    }
+  }
+  .btnWrapper{
+    height: 10%;
+    width: 10%;
+  }
+
+  .navbar{
+    padding: 5px;
+
+  }
+  .navbar span{
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+  }
+
+
+.over{
+  border: 0px solid rgb(251, 247, 247) ;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.Card{
+  background-color: #f0f0f047;
+}
+
+.over input{
+  padding: 9px;
+  border-radius: 10px;
+  /* align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; */
+}
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+  
+}
+
+.slide {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px #555);
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  /* align-items: center; */
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.indicator {
+  background-color: white;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #555;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: grey;
+}
+.cardSection{
+  background-color: #faf4fb47;
+    /* height: 200%;
+    width: 100%; */
+    position: relative;
+    top: 30px;
+    right: 0px;
+    left: 23px;
+}
+/* Dashboard.css */
+
+/* Style the carousel container */
+/* .carousel {
+  /* position: absolute;
+  bottom: 20px;
+  right: 20px; 
+  width: 300px; 
+  background-color: rgba(207, 35, 219, 0.577);
+ 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-items: flex-end;  */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(207, 35, 219, 0.577); */
+
+  
+/* }  */
+/* carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(207, 35, 219, 0.577);
+} */
+
+
+/* Style the carousel slides (if needed) */
+/* .carousel .slide { */
+  /* Add your slide styles here */
+/* } */
+
+/* Other styles for your app */
+
+/* ... (your existing styles) */
+
+
+/* Style the carousel slides (if needed) */
+/* .carousel .slide { */
+  /* Add your slide styles here */
+/* } */
+
+/* Other styles for your app */
+
+/* ... (your existing styles) */
+
+
+
+
+.btnsss{
+  justify-content: space-between;
+}
+
+.logout{
+  bottom: 0;
+}
+.progress{
+  position: relative;
+  top: 460px;
+  right: 0px;
+  left: 180px;
+  background: #6b9de09f;
+  text-align: justify;
+}
+
+
+.section1{
+  margin: 10px;
+}
+
+.contentsTask{
+  justify-content: space-evenly;
+}
+.list-group-flush{
+  text-align: justify;
+}
+.top{
+  text-align: justify;
+  /* padding-bottom: 50%; */
+}
+  
+.sw{
+  right: 0;
+}
+
+.todo{
+  /* justify-content: space-between; */
+  text-align: center;
+}
+/* .btn{
+  position: fixed;
+} */
+
+
+/* .btnsss{
+  justify-content: space-evenly;
+} */
